@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		532A08F51BFD8BF8003E4873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A08F41BFD8BF8003E4873 /* AppDelegate.swift */; };
-		532A08F71BFD8BF8003E4873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A08F61BFD8BF8003E4873 /* ViewController.swift */; };
 		532A08FA1BFD8BF8003E4873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532A08F81BFD8BF8003E4873 /* Main.storyboard */; };
 		532A08FC1BFD8BF8003E4873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 532A08FB1BFD8BF8003E4873 /* Assets.xcassets */; };
 		532A08FF1BFD8BF8003E4873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532A08FD1BFD8BF8003E4873 /* LaunchScreen.storyboard */; };
+		532A090F1BFDB748003E4873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A090E1BFDB748003E4873 /* AppDelegate.swift */; };
+		532A09111BFDB761003E4873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09101BFDB761003E4873 /* ViewController.swift */; };
+		87BCE003FE22B9363A82C4B3 /* libPods-AVLicensePlate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B18B94A5207D4816CE053D2A /* libPods-AVLicensePlate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		532A08F11BFD8BF8003E4873 /* AVLicensePlate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVLicensePlate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		532A08F41BFD8BF8003E4873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		532A08F61BFD8BF8003E4873 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		532A08F91BFD8BF8003E4873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		532A08FB1BFD8BF8003E4873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		532A08FE1BFD8BF8003E4873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		532A09001BFD8BF8003E4873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		532A090E1BFDB748003E4873 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		532A09101BFDB761003E4873 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B18B94A5207D4816CE053D2A /* libPods-AVLicensePlate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AVLicensePlate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4446EF7215EA84682F8DD1C /* Pods-AVLicensePlate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVLicensePlate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AVLicensePlate/Pods-AVLicensePlate.debug.xcconfig"; sourceTree = "<group>"; };
+		CAB47FB6876C71234EAF3103 /* Pods-AVLicensePlate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVLicensePlate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVLicensePlate/Pods-AVLicensePlate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BCE003FE22B9363A82C4B3 /* libPods-AVLicensePlate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				532A08F31BFD8BF8003E4873 /* AVLicensePlate */,
 				532A08F21BFD8BF8003E4873 /* Products */,
+				C14352CCF225B9EF041A6476 /* Pods */,
+				5876AF773A9DDA8AEE256D03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +61,95 @@
 		532A08F31BFD8BF8003E4873 /* AVLicensePlate */ = {
 			isa = PBXGroup;
 			children = (
-				532A08F41BFD8BF8003E4873 /* AppDelegate.swift */,
-				532A08F61BFD8BF8003E4873 /* ViewController.swift */,
+				532A09061BFDB73A003E4873 /* Classese */,
 				532A08F81BFD8BF8003E4873 /* Main.storyboard */,
 				532A08FB1BFD8BF8003E4873 /* Assets.xcassets */,
 				532A08FD1BFD8BF8003E4873 /* LaunchScreen.storyboard */,
 				532A09001BFD8BF8003E4873 /* Info.plist */,
 			);
 			path = AVLicensePlate;
+			sourceTree = "<group>";
+		};
+		532A09061BFDB73A003E4873 /* Classese */ = {
+			isa = PBXGroup;
+			children = (
+				532A09071BFDB73A003E4873 /* AppDelegate */,
+				532A09081BFDB73A003E4873 /* External */,
+				532A09091BFDB73A003E4873 /* Internal */,
+			);
+			path = Classese;
+			sourceTree = "<group>";
+		};
+		532A09071BFDB73A003E4873 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				532A090E1BFDB748003E4873 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		532A09081BFDB73A003E4873 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		532A09091BFDB73A003E4873 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				532A090A1BFDB73A003E4873 /* APIController */,
+				532A090B1BFDB73A003E4873 /* Controllers */,
+				532A090C1BFDB73A003E4873 /* CustomViews */,
+				532A090D1BFDB73A003E4873 /* DatabaseManager */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		532A090A1BFDB73A003E4873 /* APIController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIController;
+			sourceTree = "<group>";
+		};
+		532A090B1BFDB73A003E4873 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				532A09101BFDB761003E4873 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		532A090C1BFDB73A003E4873 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		532A090D1BFDB73A003E4873 /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		5876AF773A9DDA8AEE256D03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B18B94A5207D4816CE053D2A /* libPods-AVLicensePlate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C14352CCF225B9EF041A6476 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4446EF7215EA84682F8DD1C /* Pods-AVLicensePlate.debug.xcconfig */,
+				CAB47FB6876C71234EAF3103 /* Pods-AVLicensePlate.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 532A09031BFD8BF8003E4873 /* Build configuration list for PBXNativeTarget "AVLicensePlate" */;
 			buildPhases = (
+				CB4A9E33ADA2ED3C64843B1F /* Check Pods Manifest.lock */,
 				532A08ED1BFD8BF8003E4873 /* Sources */,
 				532A08EE1BFD8BF8003E4873 /* Frameworks */,
 				532A08EF1BFD8BF8003E4873 /* Resources */,
+				C66B50AB6AC8B6AA63559AF7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +220,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C66B50AB6AC8B6AA63559AF7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AVLicensePlate/Pods-AVLicensePlate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB4A9E33ADA2ED3C64843B1F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		532A08ED1BFD8BF8003E4873 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				532A08F71BFD8BF8003E4873 /* ViewController.swift in Sources */,
-				532A08F51BFD8BF8003E4873 /* AppDelegate.swift in Sources */,
+				532A09111BFDB761003E4873 /* ViewController.swift in Sources */,
+				532A090F1BFDB748003E4873 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +368,7 @@
 		};
 		532A09041BFD8BF8003E4873 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4446EF7215EA84682F8DD1C /* Pods-AVLicensePlate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AVLicensePlate/Info.plist;
@@ -256,6 +380,7 @@
 		};
 		532A09051BFD8BF8003E4873 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAB47FB6876C71234EAF3103 /* Pods-AVLicensePlate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AVLicensePlate/Info.plist;
@@ -284,6 +409,7 @@
 				532A09051BFD8BF8003E4873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
