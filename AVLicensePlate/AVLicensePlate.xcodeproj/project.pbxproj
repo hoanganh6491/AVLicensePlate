@@ -12,6 +12,20 @@
 		532A08FF1BFD8BF8003E4873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532A08FD1BFD8BF8003E4873 /* LaunchScreen.storyboard */; };
 		532A090F1BFDB748003E4873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A090E1BFDB748003E4873 /* AppDelegate.swift */; };
 		532A09111BFDB761003E4873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09101BFDB761003E4873 /* ViewController.swift */; };
+		532A09391BFDB83C003E4873 /* BFNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09241BFDB83C003E4873 /* BFNetworkHelper.swift */; };
+		532A093A1BFDB83C003E4873 /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09251BFDB83C003E4873 /* ReachabilityHelper.swift */; };
+		532A093B1BFDB83C003E4873 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 532A09281BFDB83C003E4873 /* Reachability.m */; };
+		532A093F1BFDB8D9003E4873 /* AVCommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A093E1BFDB8D9003E4873 /* AVCommonHelper.swift */; };
+		532A09411BFDB8E6003E4873 /* AVConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09401BFDB8E6003E4873 /* AVConstant.swift */; };
+		532A09431BFDC42F003E4873 /* AVSearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09421BFDC42F003E4873 /* AVSearchingViewController.swift */; };
+		532A09451BFDC43D003E4873 /* AVUpdatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09441BFDC43D003E4873 /* AVUpdatingViewController.swift */; };
+		532A094A1BFDC665003E4873 /* InstallingUpdates.png in Resources */ = {isa = PBXBuildFile; fileRef = 532A09481BFDC665003E4873 /* InstallingUpdates.png */; };
+		532A094B1BFDC665003E4873 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 532A09491BFDC665003E4873 /* Search.png */; };
+		532A094D1BFDC7A3003E4873 /* AVApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A094C1BFDC7A3003E4873 /* AVApiHelper.swift */; };
+		532A09511BFDC889003E4873 /* Dictionary+Benlly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A094F1BFDC889003E4873 /* Dictionary+Benlly.swift */; };
+		532A09521BFDC889003E4873 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09501BFDC889003E4873 /* SwiftyJSON.swift */; };
+		532A09561BFDC8E5003E4873 /* AVLicenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09551BFDC8E5003E4873 /* AVLicenseModel.swift */; };
+		532A095A1BFDCA8C003E4873 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 532A09591BFDCA8C003E4873 /* UIAlertView+Blocks.m */; };
 		87BCE003FE22B9363A82C4B3 /* libPods-AVLicensePlate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B18B94A5207D4816CE053D2A /* libPods-AVLicensePlate.a */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +37,23 @@
 		532A09001BFD8BF8003E4873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		532A090E1BFDB748003E4873 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		532A09101BFDB761003E4873 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		532A09241BFDB83C003E4873 /* BFNetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFNetworkHelper.swift; sourceTree = "<group>"; };
+		532A09251BFDB83C003E4873 /* ReachabilityHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityHelper.swift; sourceTree = "<group>"; };
+		532A09271BFDB83C003E4873 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		532A09281BFDB83C003E4873 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		532A093C1BFDB85F003E4873 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		532A093E1BFDB8D9003E4873 /* AVCommonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCommonHelper.swift; sourceTree = "<group>"; };
+		532A09401BFDB8E6003E4873 /* AVConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVConstant.swift; sourceTree = "<group>"; };
+		532A09421BFDC42F003E4873 /* AVSearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVSearchingViewController.swift; sourceTree = "<group>"; };
+		532A09441BFDC43D003E4873 /* AVUpdatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVUpdatingViewController.swift; sourceTree = "<group>"; };
+		532A09481BFDC665003E4873 /* InstallingUpdates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstallingUpdates.png; sourceTree = "<group>"; };
+		532A09491BFDC665003E4873 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
+		532A094C1BFDC7A3003E4873 /* AVApiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVApiHelper.swift; sourceTree = "<group>"; };
+		532A094F1BFDC889003E4873 /* Dictionary+Benlly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Benlly.swift"; sourceTree = "<group>"; };
+		532A09501BFDC889003E4873 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		532A09551BFDC8E5003E4873 /* AVLicenseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVLicenseModel.swift; sourceTree = "<group>"; };
+		532A09581BFDCA8C003E4873 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		532A09591BFDCA8C003E4873 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		B18B94A5207D4816CE053D2A /* libPods-AVLicensePlate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AVLicensePlate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4446EF7215EA84682F8DD1C /* Pods-AVLicensePlate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVLicensePlate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AVLicensePlate/Pods-AVLicensePlate.debug.xcconfig"; sourceTree = "<group>"; };
 		CAB47FB6876C71234EAF3103 /* Pods-AVLicensePlate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVLicensePlate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVLicensePlate/Pods-AVLicensePlate.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,10 +93,12 @@
 			isa = PBXGroup;
 			children = (
 				532A09061BFDB73A003E4873 /* Classese */,
+				532A09461BFDC627003E4873 /* Resources */,
 				532A08F81BFD8BF8003E4873 /* Main.storyboard */,
 				532A08FB1BFD8BF8003E4873 /* Assets.xcassets */,
 				532A08FD1BFD8BF8003E4873 /* LaunchScreen.storyboard */,
 				532A09001BFD8BF8003E4873 /* Info.plist */,
+				532A093C1BFDB85F003E4873 /* Header.h */,
 			);
 			path = AVLicensePlate;
 			sourceTree = "<group>";
@@ -91,6 +124,8 @@
 		532A09081BFDB73A003E4873 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				532A09571BFDCA8C003E4873 /* UIAlertView+Blocks */,
+				532A094E1BFDC889003E4873 /* ParseJson */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -98,6 +133,7 @@
 		532A09091BFDB73A003E4873 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
+				532A093D1BFDB8BC003E4873 /* Common */,
 				532A090A1BFDB73A003E4873 /* APIController */,
 				532A090B1BFDB73A003E4873 /* Controllers */,
 				532A090C1BFDB73A003E4873 /* CustomViews */,
@@ -109,6 +145,9 @@
 		532A090A1BFDB73A003E4873 /* APIController */ = {
 			isa = PBXGroup;
 			children = (
+				532A09121BFDB83C003E4873 /* ApiHelper */,
+				532A09231BFDB83C003E4873 /* NetworkHelper */,
+				532A09261BFDB83C003E4873 /* Reachability */,
 			);
 			path = APIController;
 			sourceTree = "<group>";
@@ -117,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				532A09101BFDB761003E4873 /* ViewController.swift */,
+				532A09421BFDC42F003E4873 /* AVSearchingViewController.swift */,
+				532A09441BFDC43D003E4873 /* AVUpdatingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,8 +172,96 @@
 		532A090D1BFDB73A003E4873 /* DatabaseManager */ = {
 			isa = PBXGroup;
 			children = (
+				532A09541BFDC8D1003E4873 /* Database */,
+				532A09531BFDC8C7003E4873 /* Model */,
 			);
 			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		532A09121BFDB83C003E4873 /* ApiHelper */ = {
+			isa = PBXGroup;
+			children = (
+				532A094C1BFDC7A3003E4873 /* AVApiHelper.swift */,
+			);
+			path = ApiHelper;
+			sourceTree = "<group>";
+		};
+		532A09231BFDB83C003E4873 /* NetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				532A09241BFDB83C003E4873 /* BFNetworkHelper.swift */,
+				532A09251BFDB83C003E4873 /* ReachabilityHelper.swift */,
+			);
+			path = NetworkHelper;
+			sourceTree = "<group>";
+		};
+		532A09261BFDB83C003E4873 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				532A09271BFDB83C003E4873 /* Reachability.h */,
+				532A09281BFDB83C003E4873 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		532A093D1BFDB8BC003E4873 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				532A093E1BFDB8D9003E4873 /* AVCommonHelper.swift */,
+				532A09401BFDB8E6003E4873 /* AVConstant.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		532A09461BFDC627003E4873 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				532A09471BFDC665003E4873 /* ImageResources */,
+			);
+			name = Resources;
+			path = Classese/Resources;
+			sourceTree = "<group>";
+		};
+		532A09471BFDC665003E4873 /* ImageResources */ = {
+			isa = PBXGroup;
+			children = (
+				532A09481BFDC665003E4873 /* InstallingUpdates.png */,
+				532A09491BFDC665003E4873 /* Search.png */,
+			);
+			path = ImageResources;
+			sourceTree = "<group>";
+		};
+		532A094E1BFDC889003E4873 /* ParseJson */ = {
+			isa = PBXGroup;
+			children = (
+				532A094F1BFDC889003E4873 /* Dictionary+Benlly.swift */,
+				532A09501BFDC889003E4873 /* SwiftyJSON.swift */,
+			);
+			path = ParseJson;
+			sourceTree = "<group>";
+		};
+		532A09531BFDC8C7003E4873 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				532A09551BFDC8E5003E4873 /* AVLicenseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		532A09541BFDC8D1003E4873 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		532A09571BFDCA8C003E4873 /* UIAlertView+Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				532A09581BFDCA8C003E4873 /* UIAlertView+Blocks.h */,
+				532A09591BFDCA8C003E4873 /* UIAlertView+Blocks.m */,
+			);
+			path = "UIAlertView+Blocks";
 			sourceTree = "<group>";
 		};
 		5876AF773A9DDA8AEE256D03 /* Frameworks */ = {
@@ -180,6 +309,7 @@
 		532A08E91BFD8BF8003E4873 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AV;
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = KZ;
@@ -215,6 +345,8 @@
 				532A08FF1BFD8BF8003E4873 /* LaunchScreen.storyboard in Resources */,
 				532A08FC1BFD8BF8003E4873 /* Assets.xcassets in Resources */,
 				532A08FA1BFD8BF8003E4873 /* Main.storyboard in Resources */,
+				532A094B1BFDC665003E4873 /* Search.png in Resources */,
+				532A094A1BFDC665003E4873 /* InstallingUpdates.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +392,18 @@
 			files = (
 				532A09111BFDB761003E4873 /* ViewController.swift in Sources */,
 				532A090F1BFDB748003E4873 /* AppDelegate.swift in Sources */,
+				532A093A1BFDB83C003E4873 /* ReachabilityHelper.swift in Sources */,
+				532A09521BFDC889003E4873 /* SwiftyJSON.swift in Sources */,
+				532A093B1BFDB83C003E4873 /* Reachability.m in Sources */,
+				532A09431BFDC42F003E4873 /* AVSearchingViewController.swift in Sources */,
+				532A09391BFDB83C003E4873 /* BFNetworkHelper.swift in Sources */,
+				532A09411BFDB8E6003E4873 /* AVConstant.swift in Sources */,
+				532A09451BFDC43D003E4873 /* AVUpdatingViewController.swift in Sources */,
+				532A093F1BFDB8D9003E4873 /* AVCommonHelper.swift in Sources */,
+				532A094D1BFDC7A3003E4873 /* AVApiHelper.swift in Sources */,
+				532A095A1BFDCA8C003E4873 /* UIAlertView+Blocks.m in Sources */,
+				532A09561BFDC8E5003E4873 /* AVLicenseModel.swift in Sources */,
+				532A09511BFDC889003E4873 /* Dictionary+Benlly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +469,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = AVLicensePlate/Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -362,6 +507,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = AVLicensePlate/Header.h;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

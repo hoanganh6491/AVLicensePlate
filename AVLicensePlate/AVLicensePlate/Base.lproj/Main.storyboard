@@ -1,25 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="er6-rl-gBA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Cập Nhật-->
+        <scene sceneID="wPZ-41-hiI">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AVUpdatingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fd6-Xt-T8i" customClass="AVUpdatingViewController" customModule="AVLicensePlate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Wzz-fV-FKV"/>
+                        <viewControllerLayoutGuide type="bottom" id="1ul-Ib-WPs"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="rdA-Tp-09x">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M27-ln-IdN">
+                                <rect key="frame" x="165" y="171" width="270" height="93"/>
+                                <color key="backgroundColor" red="0.87411132550000004" green="0.97439236110000005" blue="0.91179802249999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="jXG-6d-GzX"/>
+                                    <constraint firstAttribute="width" constant="270" id="tXd-z9-Y9q"/>
+                                </constraints>
+                                <state key="normal" title="Cập nhật dữ liệu"/>
+                                <connections>
+                                    <action selector="btnUpdateDidTap:" destination="Fd6-Xt-T8i" eventType="touchUpInside" id="6lb-mg-Tkr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M27-ln-IdN" firstAttribute="centerX" secondItem="rdA-Tp-09x" secondAttribute="centerX" id="bfH-Ag-hEw"/>
+                            <constraint firstItem="M27-ln-IdN" firstAttribute="top" secondItem="Wzz-fV-FKV" secondAttribute="bottom" constant="151" id="kcD-r5-Ua8"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Cập Nhật" image="InstallingUpdates.png" id="u4B-I0-I6z"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VrM-zm-eqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="979" y="463"/>
+        </scene>
+        <!--Tìm kiếm-->
+        <scene sceneID="1Sy-98-Qwz">
+            <objects>
+                <viewController storyboardIdentifier="AVSearchingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="66i-M6-6Na" customClass="AVSearchingViewController" customModule="AVLicensePlate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AMu-lY-4mj"/>
+                        <viewControllerLayoutGuide type="bottom" id="jUL-qR-ouC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bhO-L2-LXL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tìm kiếm" image="Search.png" id="AXH-8H-q0Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNY-Iq-Vge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="-198"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0xL-Kf-HlF">
+            <objects>
+                <tabBarController id="er6-rl-gBA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="QpL-S2-gIc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="66i-M6-6Na" kind="relationship" relationship="viewControllers" id="wke-Ua-5D1"/>
+                        <segue destination="Fd6-Xt-T8i" kind="relationship" relationship="viewControllers" id="sJK-J8-9UM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GD7-hJ-9wU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="InstallingUpdates.png" width="32" height="32"/>
+        <image name="Search.png" width="32" height="32"/>
+    </resources>
 </document>
