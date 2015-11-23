@@ -47,18 +47,18 @@ class AVUpdatingViewController: UIViewController {
     
     //MARK: - API Handler
     func APIHandlerUpdatingDatabase () {
-//        if !gettingIPAddress() {
-//            return
-//        }
+        if !gettingIPAddress() {
+            return
+        }
         
         AVCommonHelper.showHUD()
         let helper = AVApiHelper()
-        helper.callUpdateDatabase({ (result) -> () in
+        helper.callUpdateDatabase(strIPAddress, complete: { (result) -> () in
             AVDatabaseManager.sharedInstance.insertLicenses(result)
             AVCommonHelper.Log("insert successfully!")
             AVCommonHelper.dissmissHUD()
             }) { (error) -> () in
-            AVCommonHelper.dissmissHUD()                
+                AVCommonHelper.dissmissHUD()
         }
     }
     

@@ -17,6 +17,7 @@
 #import "Reachability.h"
 #import "SVProgressHUD.h"
 #import "UIAlertView+Blocks.h"
+#import "KeyboardManager.h"
 /*
  *  Database SQLite
  */

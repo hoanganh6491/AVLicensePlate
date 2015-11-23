@@ -157,7 +157,7 @@ class BFNetworkHelper: NSObject {
     }
     
     func getUrl(apiUrl: String)->(String) {
-        return AVBaseURL + apiUrl
+        return apiUrl
     }
     
     

@@ -19,11 +19,11 @@ class AVApiHelper: NSObject {
         case insert_new_book = "insert_new_book"
     }
     
-    func callUpdateDatabase (complete:([AVLicenseModel]) -> (), failed: (NSError?) -> ()) {
+    func callUpdateDatabase (ipAddress: String, complete:([AVLicenseModel]) -> (), failed: (NSError?) -> ()) {
         let params: NSMutableDictionary = NSMutableDictionary()
         params[AVApiHelperKeyHelper.action.rawValue] = AVApiHelperKeyHelper.get_all.rawValue
         
-        let apiUrl = AVApiURL_update
+        let apiUrl = String(format: "http://%@/licenseplate%@",ipAddress,AVApiURL_update)
         let apiHelper: BFNetworkHelper = BFNetworkHelper(url: apiUrl, httpMethod: .POST, parameter: params)
         apiHelper.startService({ (response) -> Void in
                 let json = JSON(response!)
