@@ -14,36 +14,17 @@ class AVApiHelper: NSObject {
     }
     
     enum AVApiHelperKeyHelper : String {
-        case action = "action"
-        case insert_new_data = "insert_new_book"
-        case books  = "books"
-        case id     = "id"
-        case name   = "name"
+        case action     = "action"
+        case get_all    = "get_all"
+        case insert_new_book = "insert_new_book"
     }
     
     func callUpdateDatabase (complete:([AVLicenseModel]) -> (), failed: (NSError?) -> ()) {
         let params: NSMutableDictionary = NSMutableDictionary()
-        params[AVApiHelperKeyHelper.action.rawValue] = AVApiHelperKeyHelper.insert_new_data.rawValue
-        
-        var arrData : [AVLicenseModel] = []
-        for var i : Int = 0; i < 10; i++ {
-            let object : AVLicenseModel = AVLicenseModel()
-            object.licenseID = i
-            object.licenseName = String(format: "name-%d", arguments: [i])
-            arrData.append(object)
-        }
-        for var i = 0 ; i < arrData.count; i++ {
-            let obj : AVLicenseModel = arrData[i]
-            let strIDKey : String = "\(AVApiHelperKeyHelper.books.rawValue)[\(i)][\(AVApiHelperKeyHelper.id.rawValue)]"
-            params[strIDKey] = obj.licenseID
-            
-            
-            let strNameKey : String = "\(AVApiHelperKeyHelper.books.rawValue)[\(i)][\(AVApiHelperKeyHelper.name.rawValue)]"
-            params[strNameKey] = obj.licenseName
-        }
+        params[AVApiHelperKeyHelper.action.rawValue] = AVApiHelperKeyHelper.get_all.rawValue
         
         let apiUrl = AVApiURL_update
-        let apiHelper: BFNetworkHelper = BFNetworkHelper(url: apiUrl, httpMethod: .GET, parameter: params)
+        let apiHelper: BFNetworkHelper = BFNetworkHelper(url: apiUrl, httpMethod: .POST, parameter: params)
         apiHelper.startService({ (response) -> Void in
                 let json = JSON(response!)
                 AVCommonHelper.Log("successfully!")

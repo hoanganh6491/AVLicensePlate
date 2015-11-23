@@ -10,6 +10,13 @@ import UIKit
 
 class AVUpdatingViewController: UIViewController {
 
+    //view
+    @IBOutlet weak var tfIPAddress: UITextField!
+    
+    
+    //data
+    var strIPAddress : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,14 +47,31 @@ class AVUpdatingViewController: UIViewController {
     
     //MARK: - API Handler
     func APIHandlerUpdatingDatabase () {
+//        if !gettingIPAddress() {
+//            return
+//        }
+        
         AVCommonHelper.showHUD()
         let helper = AVApiHelper()
-        weak var wSelf = self
         helper.callUpdateDatabase({ (result) -> () in
-
+            AVDatabaseManager.sharedInstance.insertLicenses(result)
+            AVCommonHelper.Log("insert successfully!")
             AVCommonHelper.dissmissHUD()
             }) { (error) -> () in
             AVCommonHelper.dissmissHUD()                
         }
+    }
+    
+    func gettingIPAddress () -> Bool {
+        var flag = true
+        strIPAddress = tfIPAddress.text!
+        
+        if strIPAddress.characters.count == 0 {
+            flag = false
+        } else {
+            flag = true
+        }
+        
+        return flag
     }
 }

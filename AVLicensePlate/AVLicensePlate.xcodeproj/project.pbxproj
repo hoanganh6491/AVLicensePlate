@@ -26,6 +26,10 @@
 		532A09521BFDC889003E4873 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09501BFDC889003E4873 /* SwiftyJSON.swift */; };
 		532A09561BFDC8E5003E4873 /* AVLicenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532A09551BFDC8E5003E4873 /* AVLicenseModel.swift */; };
 		532A095A1BFDCA8C003E4873 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 532A09591BFDCA8C003E4873 /* UIAlertView+Blocks.m */; };
+		53C1CDE71C02CD1A002A1F10 /* licenseplate.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 53C1CDE61C02CD1A002A1F10 /* licenseplate.sqlite */; };
+		53C1CDE91C02CD9A002A1F10 /* AVDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1CDE81C02CD9A002A1F10 /* AVDatabaseManager.swift */; };
+		53C1CDEC1C02CF0B002A1F10 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1CDEB1C02CF0B002A1F10 /* StringExtension.swift */; };
+		53C1CDF01C02D48C002A1F10 /* AVLicenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1CDEF1C02D48C002A1F10 /* AVLicenseCell.swift */; };
 		87BCE003FE22B9363A82C4B3 /* libPods-AVLicensePlate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B18B94A5207D4816CE053D2A /* libPods-AVLicensePlate.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +58,10 @@
 		532A09551BFDC8E5003E4873 /* AVLicenseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVLicenseModel.swift; sourceTree = "<group>"; };
 		532A09581BFDCA8C003E4873 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		532A09591BFDCA8C003E4873 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		53C1CDE61C02CD1A002A1F10 /* licenseplate.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = licenseplate.sqlite; sourceTree = "<group>"; };
+		53C1CDE81C02CD9A002A1F10 /* AVDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVDatabaseManager.swift; sourceTree = "<group>"; };
+		53C1CDEB1C02CF0B002A1F10 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		53C1CDEF1C02D48C002A1F10 /* AVLicenseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVLicenseCell.swift; sourceTree = "<group>"; };
 		B18B94A5207D4816CE053D2A /* libPods-AVLicensePlate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AVLicensePlate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4446EF7215EA84682F8DD1C /* Pods-AVLicensePlate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVLicensePlate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AVLicensePlate/Pods-AVLicensePlate.debug.xcconfig"; sourceTree = "<group>"; };
 		CAB47FB6876C71234EAF3103 /* Pods-AVLicensePlate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVLicensePlate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVLicensePlate/Pods-AVLicensePlate.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +132,7 @@
 		532A09081BFDB73A003E4873 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				53C1CDEA1C02CF01002A1F10 /* Extension */,
 				532A09571BFDCA8C003E4873 /* UIAlertView+Blocks */,
 				532A094E1BFDC889003E4873 /* ParseJson */,
 			);
@@ -165,6 +174,7 @@
 		532A090C1BFDB73A003E4873 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				53C1CDED1C02D45C002A1F10 /* TableViewCell */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -216,6 +226,7 @@
 		532A09461BFDC627003E4873 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				53C1CDE61C02CD1A002A1F10 /* licenseplate.sqlite */,
 				532A09471BFDC665003E4873 /* ImageResources */,
 			);
 			name = Resources;
@@ -251,6 +262,7 @@
 		532A09541BFDC8D1003E4873 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				53C1CDE81C02CD9A002A1F10 /* AVDatabaseManager.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -262,6 +274,30 @@
 				532A09591BFDCA8C003E4873 /* UIAlertView+Blocks.m */,
 			);
 			path = "UIAlertView+Blocks";
+			sourceTree = "<group>";
+		};
+		53C1CDEA1C02CF01002A1F10 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				53C1CDEB1C02CF0B002A1F10 /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		53C1CDED1C02D45C002A1F10 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				53C1CDEE1C02D473002A1F10 /* LicenseCell */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		53C1CDEE1C02D473002A1F10 /* LicenseCell */ = {
+			isa = PBXGroup;
+			children = (
+				53C1CDEF1C02D48C002A1F10 /* AVLicenseCell.swift */,
+			);
+			path = LicenseCell;
 			sourceTree = "<group>";
 		};
 		5876AF773A9DDA8AEE256D03 /* Frameworks */ = {
@@ -344,6 +380,7 @@
 			files = (
 				532A08FF1BFD8BF8003E4873 /* LaunchScreen.storyboard in Resources */,
 				532A08FC1BFD8BF8003E4873 /* Assets.xcassets in Resources */,
+				53C1CDE71C02CD1A002A1F10 /* licenseplate.sqlite in Resources */,
 				532A08FA1BFD8BF8003E4873 /* Main.storyboard in Resources */,
 				532A094B1BFDC665003E4873 /* Search.png in Resources */,
 				532A094A1BFDC665003E4873 /* InstallingUpdates.png in Resources */,
@@ -390,9 +427,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C1CDF01C02D48C002A1F10 /* AVLicenseCell.swift in Sources */,
 				532A09111BFDB761003E4873 /* ViewController.swift in Sources */,
+				53C1CDE91C02CD9A002A1F10 /* AVDatabaseManager.swift in Sources */,
 				532A090F1BFDB748003E4873 /* AppDelegate.swift in Sources */,
 				532A093A1BFDB83C003E4873 /* ReachabilityHelper.swift in Sources */,
+				53C1CDEC1C02CF0B002A1F10 /* StringExtension.swift in Sources */,
 				532A09521BFDC889003E4873 /* SwiftyJSON.swift in Sources */,
 				532A093B1BFDB83C003E4873 /* Reachability.m in Sources */,
 				532A09431BFDC42F003E4873 /* AVSearchingViewController.swift in Sources */,

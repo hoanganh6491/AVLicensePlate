@@ -78,7 +78,8 @@ class BFNetworkHelper: NSObject {
         
         let responseSerializer : AFJSONResponseSerializer = AFJSONResponseSerializer(readingOptions: NSJSONReadingOptions.AllowFragments)
         requestManager.responseSerializer = responseSerializer
-        
+        requestManager.responseSerializer.acceptableContentTypes = nil
+
         requestManager.securityPolicy.validatesDomainName = false
         requestManager.securityPolicy.allowInvalidCertificates = true
         

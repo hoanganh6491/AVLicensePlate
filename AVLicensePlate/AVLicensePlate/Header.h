@@ -17,5 +17,9 @@
 #import "Reachability.h"
 #import "SVProgressHUD.h"
 #import "UIAlertView+Blocks.h"
+/*
+ *  Database SQLite
+ */
+#import "FMDB.h"
 
 #endif /* Header_h */
